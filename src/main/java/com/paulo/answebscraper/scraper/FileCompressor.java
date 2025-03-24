@@ -1,4 +1,4 @@
-package com.paulo.answebscraper.utils;
+package com.paulo.answebscraper.scraper;
 
 import java.io.File;
 import java.io.FileOutputStream;
