@@ -9,7 +9,7 @@ public class CsvWriter {
     public void writeCSV(String filePath, List<String[]> data) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             for (String[] row : data) {
-                String formattedRow = "\"" + String.join("\",\"", row) + "\"";
+                String formattedRow = String.join(";", row);
                 writer.append(formattedRow).append("\n");
             }
             System.out.println("CSV gerado com sucesso: " + filePath);
